@@ -1,0 +1,23 @@
+export const swObjects: string[] = [
+    'nerfburger',
+    'fusioncutter',
+    'turbolaser',
+    'holonet',
+    'comlink',
+    'droid',
+    'holoscanner',
+    'sabacc',
+    'cantina',
+    'stormtrooper',
+    "ewok",
+    'darksaber',
+    'lightsaber',
+    'blaster',
+    'mandalore',
+    'rebel',
+    'clonetrooper',
+    'clone',
+    'plasma',
+    'force',
+
+];
