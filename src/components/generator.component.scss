@@ -1,0 +1,85 @@
+.background {
+  display: flex;
+  background-image: url('/assets/galaxy.jpg');
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Arial';
+
+    .title {
+      color: #ffe81f;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-top: 100px;
+
+      &.animatein {
+        animation: flyin 2s linear;
+      }
+
+      &.animateout {
+        animation: flyout 1s linear;
+      }
+    }
+
+    @keyframes flyin {
+      0% {
+        opacity: 0;
+        transform: translateY(50vh) scale(1.4) perspective(300px) rotateX(25deg);
+      }
+      50% {
+        opacity: 0.3;
+        transform: translateY(25vh) scale(1.2) perspective(180px) rotateX(18deg);
+      }
+      75% {
+        opacity: 0.75;
+        transform: translateY(12.5vh) scale(1.1) perspective(150px) rotateX(15deg);
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes flyout {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+        transform: translateY(-40px) scale(0.8) perspective(200px) rotateX(10deg);
+      }
+      75% {
+        opacity: 0.25;
+        transform: translateY(-60px) scale(0.7) perspective(250px) rotateX(20deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-80px) scale(0.6) perspective(300px) rotateX(25deg);
+      }
+    }
+
+    .button {
+      width: fit-content;
+      padding: 25px 40px;
+      margin: auto;
+      border-radius: 0;
+      background-color: #0068a9;
+      border: none;
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: #1484d7;
+      }
+
+      &:active {
+        background-color: #07598d;
+      }
+    }
+  }
+}

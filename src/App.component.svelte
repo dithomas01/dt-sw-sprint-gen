@@ -1,12 +1,7 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import { SprintNameService } from '@services/sprint-name.service';
-
-	onMount(() => {
-       console.log(SprintNameService.generateSprintName());
-    })
+    import GeneratorComponent from '@components/generator.component.svelte';
 </script>
 
 <svelte:options tag="dt-sprint-name-gen"/>
 
-<div>Test</div>
+<GeneratorComponent></GeneratorComponent>
